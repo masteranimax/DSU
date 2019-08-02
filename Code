@@ -1,0 +1,27 @@
+/*
+ int d[N],sd[N];
+ int getd(int x)
+ {
+   if(x==d[x])
+    return x;
+  else
+    return getd(d[x]);
+ } 
+ void inz()
+ { rep(i,1,N) d[i]=i,sd[i]=1; }
+ 
+ void unite(int a,int b)
+ {   a=getd(a); b=getd(b);
+   if(a==b) return;
+    if(sd[a]<sd[b]) swap(a,b);
+    d[b]=a;
+    sd[a]+=sd[b];
+ }
+ 
+ bool find(int a,int b)
+ {
+    if(getd(a)==getd(b))
+      return 1;
+    return 0;
+ }
+*/ 
